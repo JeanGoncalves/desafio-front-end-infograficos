@@ -15,7 +15,7 @@
 	</header>
 
 	<div class="news">
-		<article>
+		<article *ngFor="let news of listNews">
 			<div class="top">
 				<span>20/03/2017</span>
 				<span>
@@ -23,9 +23,12 @@
 				</span>
 			</div>
 			<div class="content">
-				<img src="https://raw.githubusercontent.com/JeanGoncalves/desafio-front-end-infograficos/master/Arquivos/Imagens/Notícias/8.jpg" alt="Governo">
+				<img src="{{ imageUrl + news.Foto }}" alt="Governo">
 				<h3>Votação encerrada</h3>
-				<p>loren ipsun dolor sit amet, consectetur adipiscing elit. Sed vestibulum viverra diam ut venenatis.</p>
+				<p>{{ news.Texto }}</p>
+			</div>
+
+			<div class="footer">
 				<a href="#">Saiba mais</a>
 			</div>
 		</article>

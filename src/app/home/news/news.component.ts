@@ -7,11 +7,30 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class NewsComponent implements OnInit {
 
-  @Input() news = [];
+  private _news;
+  public listNews = [];
+  public editoria = "Esporte";
+  public imageUrl = "https://raw.githubusercontent.com/JeanGoncalves/desafio-front-end-infograficos/master/Arquivos/Imagens/Notícias/";
+
+  @Input()
+  set news (news: Array<any>) {
+    this._news = news;
+    this.onInitNews();
+  }
+  get news (): Array<any> {
+    return this._news;
+  }
   
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onInitNews() {
+    if (this.news.length > 0) {
+      this.listNews = this.news[0].Notícias;
+      console.log(this.listNews);
+    }
   }
 
 }
