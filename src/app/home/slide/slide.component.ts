@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-slide',
@@ -7,21 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlideComponent implements OnInit {
 
+  @Input() slides = [];
+
+  urlSlide = "https://raw.githubusercontent.com/JeanGoncalves/desafio-front-end-infograficos/master/Arquivos/Imagens/Slide/";
+	slideIndex = 1;
+	timeSlide = 4;
+	mySlide = document.getElementsByClassName("mySlides");
+  step = document.getElementsByClassName("btn-step");
+
   constructor() { }
 
-	slideIndex = 1;
-	mySlide = document.getElementsByClassName("mySlides");
-	step = document.getElementsByClassName("btn-step");
-	timeSlide = 4;
-
-	ngOnInit() {
-		this.showDivs(this.slideIndex);
-	}
-
-	ngAfterContentInit() {
+  ngOnInit() {
 		this.looping(this.mySlide.length, this.timeSlide);
-	}
+  }
 
+  ngAfterViewChecked() {
+		this.showDivs(this.slideIndex);
+  }
 
 	plusDivs(index) {
 		this.showDivs(this.slideIndex += index);
@@ -32,6 +34,8 @@ export class SlideComponent implements OnInit {
 	}
 
 	showDivs(slideIndex) {
+    if (this.mySlide.length === 0) return;
+
 		let tmp;
 		if (slideIndex > this.mySlide.length) {
 			this.slideIndex = 1;
@@ -44,6 +48,7 @@ export class SlideComponent implements OnInit {
 			this.mySlide[tmp]['style'].display = "none"; 
 			this.step[tmp].className = this.step[tmp].className.replace(" change", "");
 		}
+
 		this.mySlide[this.slideIndex - 1]['style'].display = "block";
 		this.step[this.slideIndex - 1].className += " change";
 	}

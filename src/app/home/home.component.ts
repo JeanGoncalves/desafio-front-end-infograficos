@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from "./../app.service";
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  slides = [];
+
+  constructor(
+    private appService: AppService
+  ) { }
 
   ngOnInit() {
+    this.appService.getSlides()
+      .then(slides => this.slides = slides[0].imagens);
   }
 
 }
