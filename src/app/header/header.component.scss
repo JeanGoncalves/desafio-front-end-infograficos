@@ -1,0 +1,32 @@
+header {
+    padding-top: 45px;
+}
+
+.logo {
+    width: 20em;
+}
+
+.menu {
+    height: 100%;
+    ul {
+        height: 100%;
+        display: flex;
+        list-style: none;
+        align-items: flex-end;
+        margin: 0;
+
+        li {
+            padding: 10px 15px;
+            font-size: 24px;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+
+            &.selected {
+                color: #c10027;
+                font-weight: bold;
+            }
+        }
+    }
+}

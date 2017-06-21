@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+
+    .flex-content {
+        width: 100%;
+    }
+}
+
+.center {
+    text-align: center;
+}
