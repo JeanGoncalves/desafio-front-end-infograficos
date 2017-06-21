@@ -1,0 +1,21 @@
+[
+    {
+        "nome": "Gráfico de mais acessados",
+        "valores": [{
+            "tipo": "Governo",
+            "valor": 75
+        }, {
+            "tipo": "Carnaval",
+            "valor": 50
+        }, {
+            "tipo": "Esporte",
+            "valor": 45
+        }, {
+            "tipo": "Férias",
+            "valor": 30
+        }, {
+            "tipo": "Outros",
+            "valor": 25
+        }]
+    }
+]

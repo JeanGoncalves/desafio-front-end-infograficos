@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
 
   slides = [];
   news = [];
+  graph = [];
 
   constructor(
     private appService: AppService
@@ -24,6 +25,10 @@ export class HomeComponent implements OnInit {
     /* GET News*/
     this.appService.getNews()
       .then(news => this.news = news[0].Editorias);
+
+    /* GET Graph*/
+    this.appService.getGraph()
+      .then(graph => this.graph = graph[0].valores);
   }
 
 }

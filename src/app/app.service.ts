@@ -27,6 +27,12 @@ export class AppService {
             .then(response => response.json())
             .catch(this.handleError);
     }
+    getGraph () {
+        return this.http.get(this._url + 'grafico.json')
+            .toPromise()
+            .then(response => response.json())
+            .catch(this.handleError);
+    }
 
     private handleError(err: any): Promise<any> {
         return Promise.reject(err.message || err);
