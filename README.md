@@ -9,6 +9,8 @@ Para o perfeito funcionamento do projeto, é necessário que o ambiente esteja [
       ng serve
       ```
 4. Acessar a aplicação no navegador no link <http://localhost:4200>
+> Extra:
+> O projeto está disponível online no link <http://minuto-news.herokuapp.com>
 ---
 # Teste - Front-End
 O desafio é realizar o desenvolvimento front-end da homepage de um jornal fictício. O desenvolvimento deve seguir fielmente o layout disponibilizado nos arquivos abaixo (espaçamento, cores, tipografia e etc). Você não deve utilizar nenhum framework CSS (Bootstrap, Foundation e etc) neste desafio.
