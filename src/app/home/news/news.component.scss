@@ -1,0 +1,39 @@
+section {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        label {
+            color: #52575e;
+            font-size: 21px;
+            margin: 0 10px;
+        }
+
+        select {
+            border: 0;
+            background-color: black;
+            color: #fff;
+            padding: 5px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+    }
+
+    .news {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+
+        article {
+            border-left: 3px solid #c10027;
+            padding-left: 20px;
+
+            .top {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+}

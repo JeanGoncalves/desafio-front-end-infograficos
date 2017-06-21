@@ -4,6 +4,27 @@ body {
     margin: 0 auto;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 2em;
+    }
+
+    section {
+        margin-top: 100px;
+    }
+}
+
+.page-margin {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.separated {
+    border-bottom-width: 2px;
+    border-bottom-style: dashed;
+    border-bottom-color: #999ba1;
+    margin: 6% 10%;
 }
 
 .flex {
