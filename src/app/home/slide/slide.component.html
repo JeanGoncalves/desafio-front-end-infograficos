@@ -1,3 +1,32 @@
-<p>
-  slide works!
-</p>
+<section class="slider">
+	<div class="w3-display-container">
+
+		<div class="w3-display-container mySlides w3-animate-left">
+			<img src="https://raw.githubusercontent.com/JeanGoncalves/desafio-front-end-infograficos/master/Arquivos/Imagens/Slide/1.jpg">
+		</div>
+		<div class="w3-display-container mySlides w3-animate-left">
+			<img src="https://raw.githubusercontent.com/JeanGoncalves/desafio-front-end-infograficos/master/Arquivos/Imagens/Slide/2.jpg">
+		</div>
+		<div class="w3-display-container mySlides w3-animate-left">
+			<img src="https://raw.githubusercontent.com/JeanGoncalves/desafio-front-end-infograficos/master/Arquivos/Imagens/Slide/3.jpg">
+		</div>
+		<div class="w3-display-container mySlides w3-animate-left">
+			<img src="https://raw.githubusercontent.com/JeanGoncalves/desafio-front-end-infograficos/master/Arquivos/Imagens/Slide/4.jpg">
+		</div>
+		<div class="w3-display-container mySlides w3-animate-left">
+			<img src="https://raw.githubusercontent.com/JeanGoncalves/desafio-front-end-infograficos/master/Arquivos/Imagens/Slide/5.jpg">
+		</div>
+
+		<button class="slide-button slide-display-left" (click)="plusDivs(-1)"><</button>
+		<button class="slide-button slide-display-right" (click)="plusDivs(1)">></button>
+
+		<div class="steps">
+			<button class="btn-step" (click)="currentDiv(1)"></button> 
+			<button class="btn-step" (click)="currentDiv(2)"></button> 
+			<button class="btn-step" (click)="currentDiv(3)"></button> 
+			<button class="btn-step" (click)="currentDiv(4)"></button> 
+			<button class="btn-step" (click)="currentDiv(5)"></button> 
+		</div>
+
+	</div>
+</section>
