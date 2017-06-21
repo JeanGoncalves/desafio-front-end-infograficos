@@ -1,12 +1,12 @@
 # Instruções - Funcionamento
-O projeto foi feito com o Framework [Angular 2](https://angular.io/) e utilizando a plataforma [SASS/SCSS](http://sass-lang.com/) para seu estilo.  
+O projeto foi feito com o Framework [Angular 2](https://angular.io/) e utilizando a plataforma [SASS/SCSS](http://sass-lang.com/) para seu estilo.
 Para o perfeito funcionamento do projeto, é necessário que o ambiente esteja [configurado](https://angular.io/guide/quickstart#devenv) para rodar o framework `Angular 2`.
 
-1. Clonar o repositório
-2. Acessar a pasta do repositório clonado por terminal
+1. Clonar o repositório no seu ambiente local
+2. Acessar a pasta do repositório pelo terminal
 3. Na raiz do projeto, rodar o seguinte comando: 
       ```
-      npm serve
+      ng serve
       ```
 4. Acessar a aplicação no navegador no link <http://localhost:4200>
 ---
