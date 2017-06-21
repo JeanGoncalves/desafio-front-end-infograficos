@@ -1,3 +1,15 @@
+# Instruções - Funcionamento
+O projeto foi feito com o Framework [Angular 2](https://angular.io/) e utilizando a plataforma [SASS/SCSS](http://sass-lang.com/) para seu estilo.  
+Para o perfeito funcionamento do projeto, é necessário que o ambiente esteja [configurado](https://angular.io/guide/quickstart#devenv) para rodar o framework `Angular 2`.
+
+1. Clonar o repositório
+2. Acessar a pasta do repositório clonado por terminal
+3. Na raiz do projeto, rodar o seguinte comando: 
+      ```
+      npm serve
+      ```
+4. Acessar a aplicação no navegador no link <http://localhost:4200>
+---
 # Teste - Front-End
 O desafio é realizar o desenvolvimento front-end da homepage de um jornal fictício. O desenvolvimento deve seguir fielmente o layout disponibilizado nos arquivos abaixo (espaçamento, cores, tipografia e etc). Você não deve utilizar nenhum framework CSS (Bootstrap, Foundation e etc) neste desafio.
 
