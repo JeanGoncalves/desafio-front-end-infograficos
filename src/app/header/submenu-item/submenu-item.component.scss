@@ -1,0 +1,23 @@
+.submenu {
+    position: absolute;
+    list-style: none;
+    padding: 8px 14px;
+    text-align: left;
+    font-size: 16px;
+    width: 12%;
+    background-color: white;
+    border-bottom: 4px solid #c10027;
+    margin-top: 10px;
+
+    li {
+
+        a {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
