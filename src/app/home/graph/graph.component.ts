@@ -12,7 +12,6 @@ export class GraphComponent implements OnInit {
   @Input()
   set graph (graph: Array<any>) {
     this._graph = graph;
-    this.onInitGraph();
   }
   get graph (): Array<any> {
     return this._graph;
@@ -21,9 +20,4 @@ export class GraphComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  onInitGraph() {
-
-  }
-
 }

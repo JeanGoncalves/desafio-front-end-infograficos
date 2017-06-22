@@ -2,25 +2,9 @@
 	<h2>Editoriais mais acessados</h2>
 	<div class="graph-content">
 		<article class="graph">
-			<div class="bar" style="height: 75%">
-				<span class="value">75</span>
-				<span class="axis">Governo</span>
-			</div>
-			<div class="bar" style="height: 50%">
-				<span class="value">50</span>
-				<span class="axis">Carnaval</span>
-			</div>
-			<div class="bar" style="height: 45%">
-				<span class="value">45</span>
-				<span class="axis">Esporte</span>
-			</div>
-			<div class="bar" style="height: 30%">
-				<span class="value">30</span>
-				<span class="axis">Férias</span>
-			</div>
-			<div class="bar" style="height: 25%">
-				<span class="value">25</span>
-				<span class="axis">Outros</span>
+			<div class="bar" *ngFor="let bar of graph" [style.height.%]="bar.valor">
+				<span class="value">{{ bar.valor }}</span>
+				<span class="axis">{{ bar.tipo }}</span>
 			</div>
 		</article>
 		<article>

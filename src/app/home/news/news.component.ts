@@ -29,7 +29,6 @@ export class NewsComponent implements OnInit {
   onInitNews() {
     if (this.news.length > 0) {
       this.listNews = this.news[0].Notícias;
-      console.log(this.listNews);
     }
   }
 
