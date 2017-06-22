@@ -1,21 +1,23 @@
 [
     {
-        "nome": "Gráfico de mais acessados",
-        "valores": [{
-            "tipo": "Governo",
-            "valor": 75
+        "name": "Gráfico de mais acessados",
+        "title": "Título aqui",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis",
+        "values": [{
+            "type": "Governo",
+            "value": 75
         }, {
-            "tipo": "Carnaval",
-            "valor": 50
+            "type": "Carnaval",
+            "value": 50
         }, {
-            "tipo": "Esporte",
-            "valor": 45
+            "type": "Esporte",
+            "value": 45
         }, {
-            "tipo": "Férias",
-            "valor": 30
+            "type": "Férias",
+            "value": 30
         }, {
-            "tipo": "Outros",
-            "valor": 25
+            "type": "Outros",
+            "value": 25
         }]
     }
 ]

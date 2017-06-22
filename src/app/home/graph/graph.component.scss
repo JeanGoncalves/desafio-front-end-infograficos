@@ -1,6 +1,8 @@
 .graph-content {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-self: end;
 
     article {
         width: 100%;
@@ -42,6 +44,21 @@
                     width: 100%;
                     color: #fff;
                 }
+            }
+        }
+
+        &.description {
+            align-self: flex-end;
+            h3 {
+                font-size: 26px;
+            }
+            p {
+                text-align: justify;
+                column-count: 2;
+                column-gap: 30px;
+                font-family: Verdana;
+                font-size: 16px;
+                margin: 0;
             }
         }
     }

@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
 
     /* GET Graph*/
     this.appService.getGraph()
-      .then(graph => this.graph = graph[0].valores);
+      .then(graph => this.graph = graph[0]);
   }
 
 }

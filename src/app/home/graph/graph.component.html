@@ -2,13 +2,14 @@
 	<h2>Editoriais mais acessados</h2>
 	<div class="graph-content">
 		<article class="graph">
-			<div class="bar" *ngFor="let bar of graph" [style.height.%]="bar.valor">
-				<span class="value">{{ bar.valor }}</span>
-				<span class="axis">{{ bar.tipo }}</span>
+			<div class="bar" *ngFor="let bar of graph.values" [style.height.%]="bar.value">
+				<span class="value">{{ bar.value }}</span>
+				<span class="axis">{{ bar.type }}</span>
 			</div>
 		</article>
-		<article>
-			<p>Loren Ipsun Dolor</p>
+		<article class="description">
+			<h3>{{ graph.title }}</h3>
+			<p>{{ graph.description }}</p>
 		</article>
 	</div>
 </section>
