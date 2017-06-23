@@ -2,7 +2,8 @@ section.contact {
     margin: 0;
 
     display: grid;
-    grid-template-columns: repeat(4, [col] 25% ) ;
+    grid-template-columns: repeat(4, [col] 25% );
+    
 
     h3 {
         font-size: 1.6em;
@@ -10,7 +11,7 @@ section.contact {
 
     .address {
         grid-column: col / span 2;
-        grid-template-columns: 20% auto;
+        grid-template-columns: 25% auto;
         grid-template-rows: 200px 100px auto;
 
         display: grid;
@@ -26,13 +27,15 @@ section.contact {
 
     .form {
         grid-column: col 3 / span 2;
-        grid-template-columns: auto 20%;
+        grid-template-columns: auto 25%;
         grid-template-rows: 200px 100px auto;
 
         display: grid;
         color: #fff;
         background-color: #c1002c;
-        padding: 0 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 120px;
 
         .content {
             display: flex;
