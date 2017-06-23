@@ -8,10 +8,15 @@ import { Component, OnInit, Input } from '@angular/core';
 export class GraphComponent implements OnInit {
   
   private _graph = [];
+  public title: string;
+  public description: string;
 
   @Input()
   set graph (graph: Array<any>) {
     this._graph = graph;
+    this.title = graph['title'];
+    this.description = graph['description'];
+
   }
   get graph (): Array<any> {
     return this._graph;
