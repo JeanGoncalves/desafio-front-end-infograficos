@@ -13,18 +13,18 @@ export class SubmenuItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.submenu[0]['style'].display = this.submenuState;
+    /*this.submenu[0]['style'].display = this.submenuState;*/
   }
 
   toggle () {
 
-    if (this.submenuState === 'none') {
+    /*if (this.submenuState === 'none') {
       this.submenuState = '';
     } else {
       this.submenuState = 'none';
     }
 
-    this.submenu[0]['style'].display = this.submenuState;
+    this.submenu[0]['style'].display = this.submenuState;*/
   }
 
 }

@@ -1,20 +1,26 @@
 <section class="slider">
-	<div class="w3-display-container">
 
+	<div class="slide-images">
 		<div *ngFor="let slide of slides; let idx = index">
-			<div class="w3-display-container mySlides w3-animate-left">
+			<div class="mySlides">
 				<img src="{{ urlSlide + slide }}">
 			</div>
 		</div>
+	</div>
 
-		<button class="slide-button slide-display-left" (click)="plusDivs(-1)"><</button>
-		<button class="slide-button slide-display-right" (click)="plusDivs(1)">></button>
+	<div class="slide-buttons">
+		<div class="slide-button slide-button-right">
+			<button class="btn-slide" (click)="plusDivs(-1)"><</button>
+		</div>
 
-		<div class="steps">
+		<div class="slide-button  steps">
 			<div *ngFor="let slide of slides; let idx = index">
 				<button class="btn-step" (click)="currentDiv(idx + 1)"></button> 
 			</div>
 		</div>
 
+		<div class="slide-button slide-button-left">
+			<button class="btn-slide" (click)="plusDivs(1)">></button>
+		</div>
 	</div>
 </section>
