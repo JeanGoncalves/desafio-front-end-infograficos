@@ -1,0 +1,16 @@
+footer {
+    background-color: #000;
+    color: #fff;
+    height: 50px;
+
+    display: grid;
+    grid-template-columns: 8% auto auto 8%;
+    align-items: center;
+
+    font-family: Verdana;
+    font-weight: bold;
+
+    span {
+        grid-column: 2;
+    }
+}
