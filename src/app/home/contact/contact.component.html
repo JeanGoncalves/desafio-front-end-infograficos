@@ -38,16 +38,18 @@
 			<h3>Mande uma mensagem</h3>
 		</div>
 		<div class="grid-column-1 grid-row-3 content">
-			<label for="name">Seu nome:</label>
-			<input type="text" name="name">
+			<form [formGroup]="contactForm" (ngSubmit)="sendContact($event)">
+				<label for="name">Seu nome:</label>
+				<input type="text" formControlName="name">
 
-			<label for="email">Email:</label>
-			<input type="email" name="email">
+				<label for="email">Email:</label>
+				<input type="email" formControlName="email">
 
-			<label for="message">Mensagem:</label>
-			<textarea name="message" cols="30" rows="6"></textarea>
+				<label for="message">Mensagem:</label>
+				<textarea formControlName="message" cols="30" rows="6"></textarea>
 
-			<button type="submit" id="submit">Enviar</button>
+				<button type="submit">Enviar</button>
+			</form>
 		</div>
 	</article>
 

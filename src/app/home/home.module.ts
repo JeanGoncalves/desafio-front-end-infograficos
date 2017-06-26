@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { AgmCoreModule } from '@agm/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { SlideComponent } from './slide/slide.component';
 import { NewsComponent } from './news/news.component';
@@ -14,7 +16,9 @@ import { ContactComponent } from './contact/contact.component';
     CommonModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyB4FQ9Lmt4IwhYpeFoK_YDKvxsDuX_21qk'
-    })
+    }),
+    ReactiveFormsModule,
+    HttpModule
   ],
   declarations: [
     HomeComponent, 
