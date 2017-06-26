@@ -4,12 +4,13 @@
 		<div>
 			<label for="order">Ordenar por:</label>
 			<select name="order" id="order">
-				<option>Data</option>
+				<option value="data">Data</option>
+				<option value="nome">Nome</option>
 			</select>
 
 			<label for="filter">Filtrar por:</label>
 			<select name="filter" id="filter">
-				<option>Editoria</option>
+				<option *ngFor="let editory of listEditory">{{editory}}</option>
 			</select>
 		</div>
 	</header>
