@@ -67,15 +67,20 @@ nav {
     .submenu-icon:hover + .submenu, .submenu:hover {
         display: block;
     }
+
+    .menu-icon {
+        display: none;
+    }
 }
 
 
 @media screen and (max-width: 980px) {
     nav {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
         .menu {
             display: none;
 

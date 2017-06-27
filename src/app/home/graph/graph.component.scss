@@ -64,7 +64,7 @@
     }
 }
 
-@media screen and (max-width: 900px) and (min-width: 701px) {
+@media screen and (max-width: 900px) and (min-width: 701px) and (max-width:480px) {
     .graph-content article.graph {
         .bar {
             width: 25px;
@@ -86,5 +86,25 @@
 @media screen and (max-width: 700px) {
     .graph-content {
         grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .graph-content article.graph {
+        justify-content: center;
+        .bar {
+            width: 25px;
+            margin: 0 10px;
+
+            .value {
+                font-size: 20px;
+                top: -32px;
+            }
+
+            .axis {
+                font-size: 12px;
+                bottom: 12px;
+            }
+        }
     }
 }
