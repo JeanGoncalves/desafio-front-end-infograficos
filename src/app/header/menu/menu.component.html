@@ -1,4 +1,7 @@
-<nav >
+<nav>
+	<div class="menu-icon">
+		<a href="javascript:void(0);" class="icon" (click)="toggleMenu()">&#9776;</a>
+	</div>
 	<ul class="menu">
 		<li class="menu-item" *ngFor="let menu of arrMenu">
 			<a [href]="menu.link" [ngClass]="{'selected': menu.select}" *ngIf="!hasSubmenu(menu)">{{ menu.name }}</a>

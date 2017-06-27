@@ -20,4 +20,14 @@ export class MenuComponent implements OnInit {
     return menu.hasOwnProperty('submenu');
   }
 
+  toggleMenu() {
+    var menu = document.getElementsByClassName('menu')[0];
+    if (menu.className === 'menu') {
+      menu.className += ' responsive';
+    } else {
+      menu.className = 'menu';
+    }
+    console.log('menu toggle')
+  }
+
 }

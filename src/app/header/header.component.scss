@@ -7,3 +7,17 @@ header {
 .logo {
     width: 20em;
 }
+
+.flex-logo, .flex-menu {
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        width: 15em;
+    }
+
+    .flex-logo {
+        width: 60%;
+    }
+}
