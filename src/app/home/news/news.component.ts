@@ -70,5 +70,7 @@ export class NewsComponent implements OnInit {
     this.groupNews(this._news, value);
   }
 
-
+  formatData(data: string) {
+    return data.replace(/-/g, '/');
+  }
 }

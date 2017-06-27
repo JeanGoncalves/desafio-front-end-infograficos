@@ -21,7 +21,7 @@
 		<article *ngFor="let new of listNews">
 
 				<div class="top">
-					<span>{{ new['Data de publicação'] }}</span>
+					<span>{{ formatData(new['Data de publicação']) }}</span>
 					<span>
 						<strong>{{ new['editoria'] }}</strong>
 					</span>
