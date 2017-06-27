@@ -111,5 +111,12 @@ nav {
                 font-size: 26px;
             }
         }
+
+        .submenu-icon:hover + .submenu, .submenu:hover {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            position: initial;
+        }
     }
 }
