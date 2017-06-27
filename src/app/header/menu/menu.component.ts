@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   moduleId: module.id,
@@ -8,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  @Input() arrMenu = [];
+  
   constructor() { }
 
   ngOnInit() {
+    console.log(this.arrMenu);
+  }
+
+  hasSubmenu(menu) {
+    return menu.hasOwnProperty('submenu');
   }
 
 }

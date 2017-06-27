@@ -1,19 +1,21 @@
-<nav class="menu">
-	<ul>
-		<li>
-			<a href="#" class="selected">Início</a>
-		</li>
-		<li>
-			<app-submenu-item></app-submenu-item>
-		</li>
-		<li>
-			<a href="#">Mundo</a>
-		</li>
-		<li>
-			<a href="#">Blogs</a>
-		</li>
-		<li>
-			<a href="#">Assine</a>
+<nav >
+	<ul class="menu">
+		<li class="menu-item" *ngFor="let menu of arrMenu">
+			<a [href]="menu.link" [ngClass]="{'selected': menu.select}" *ngIf="!hasSubmenu(menu)">{{ menu.name }}</a>
+
+			<a href="#" class="link-submenu" *ngIf="hasSubmenu(menu)">
+
+				<span class="submenu-icon">
+					<a [href]="menu.link">{{ menu.name }}</a>
+					<img src="assets/images/arrow_submenu.png">
+				</span>
+
+				<ul class="submenu">
+					<li class="submenu-item" *ngFor="let sub of menu.submenu">
+						<a [href]="sub.link">{{ sub.name }}</a>
+					</li>
+				</ul>
+			</a>
 		</li>
 	</ul>
 </nav>
