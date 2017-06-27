@@ -5,6 +5,10 @@ section {
         align-items: center;
         margin-bottom: 40px;
 
+        .filters {
+            display: inline-table;
+        }
+
         label {
             color: #52575e;
             font-size: 21px;
@@ -64,4 +68,44 @@ section {
         }
     }
 
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .news {
+            justify-content: space-around;
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    section {
+        .news {
+            grid-template-columns: auto auto;
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    section {
+        header {
+            .filters {
+                display: grid;
+                width: 100%;
+            }
+        }
+
+        .news {
+            grid-template-columns: auto;
+
+            article {
+                width: initial;
+                padding: 0 20px;
+            }
+        }
+    }
 }

@@ -15,6 +15,9 @@ section.contact {
         grid-template-rows: 200px 100px auto;
 
         display: grid;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 120px;
         
         .description {
             font-family: Verdana;
@@ -96,4 +99,20 @@ section.contact {
 }
 .dbl-space {
     margin: 35px 0;
+}
+
+@media screen and (max-width: 700px) {
+    section.contact {
+        .address, .form {
+            grid-column: col / span 4;
+            grid-template-columns: auto;
+        }
+        .address {
+            grid-row: row;
+        }
+
+        .form {
+            grid-row: row 2;
+        }
+    }
 }

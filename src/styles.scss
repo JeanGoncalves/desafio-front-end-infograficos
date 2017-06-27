@@ -40,3 +40,16 @@ body {
     text-align: center;
 }
 
+@media screen and (max-width: 1024px) {
+    .page-margin {
+        margin-left: 10%;
+        margin-right: 10%;        
+    }
+}
+
+@media screen and (max-width: 700) {
+    .page-margin {
+        margin-left: 6%;
+        margin-right: 6%;        
+    }
+}
