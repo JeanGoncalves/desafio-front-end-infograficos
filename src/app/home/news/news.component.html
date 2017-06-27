@@ -3,35 +3,39 @@
 		<h2>Editoriais</h2>
 		<div>
 			<label for="order">Ordenar por:</label>
-			<select name="order" id="order">
-				<option value="data">Data</option>
-				<option value="nome">Nome</option>
+			<select name="order" (change)="changeOrder(selectOrder.value)" #selectOrder>
+				<option value="">Selecione</option>
+				<option value="date">Data</option>
+				<option value="name">Nome</option>
 			</select>
 
 			<label for="filter">Filtrar por:</label>
-			<select name="filter" id="filter">
-				<option *ngFor="let editory of listEditory">{{editory}}</option>
+			<select name="filter" (change)="changeFilter(selectFilter.value)" #selectFilter>
+				<option value=''>Editoria</option>
+				<option *ngFor="let new of news" [ngValue]="new">{{new.Editoria}}</option>
 			</select>
 		</div>
 	</header>
 
 	<div class="news">
-		<article *ngFor="let news of listNews">
-			<div class="top">
-				<span>20/03/2017</span>
-				<span>
-					<strong>Governo</strong>
-				</span>
-			</div>
-			<div class="content">
-				<img src="{{ imageUrl + news.Foto }}" alt="Governo">
-				<h3>Votação encerrada</h3>
-				<p>{{ news.Texto }}</p>
-			</div>
+		<article *ngFor="let new of listNews">
 
-			<div class="footer">
-				<a href="#">Saiba mais</a>
-			</div>
+				<div class="top">
+					<span>{{ new['Data de publicação'] }}</span>
+					<span>
+						<strong>{{ new['editoria'] }}</strong>
+					</span>
+				</div>
+				<div class="content">
+					<img src="{{ imageUrl + new['Foto'] }}" alt="Governo">
+					<h3>{{ new['Título'] }}</h3>
+					<p>{{ new['Texto'] }}</p>
+				</div>
+
+				<div class="footer">
+					<a href="#">Saiba mais</a>
+				</div>
+
 		</article>
 	</div>
 
